@@ -18,6 +18,8 @@ public class SumsToN {
 
     n = console.nextInt();
 
+    findSums(n);
+
   }
 
   public static void findSums (int n) {
