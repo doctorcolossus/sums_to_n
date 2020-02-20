@@ -14,11 +14,13 @@ public class SumsToN {
     Scanner console = new Scanner(System.in);
     int n;
 
-
     System.out.print("value of n: ");
 
     n = console.nextInt();
-    
+
+  }
+
+  public static void findSums (int n) {
 
   }
 
