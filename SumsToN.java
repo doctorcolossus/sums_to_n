@@ -20,9 +20,15 @@ public class SumsToN {
 
     findSums(n);
 
+    System.out.printf("%n");
+
   }
 
   public static void findSums (int n) {
+
+    if (n == 1) {
+      System.out.printf("1");
+    }
 
   }
 
