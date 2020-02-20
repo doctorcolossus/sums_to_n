@@ -5,11 +5,12 @@
  * Ahadwali Zadron
  */
 
-Scanner console = new Scanner(System.in);
+import java.util.Scanner;
 
 public class SumsToN {
 
   public static void main (String [] args) {
+
     Scanner console = new Scanner(System.in);
 
     System.out.print("value of n: ");
