@@ -18,6 +18,7 @@ public class SumsToN {
     System.out.print("value of n: ");
 
     n = console.nextInt();
+    
 
   }
 
