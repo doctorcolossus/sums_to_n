@@ -1,5 +1,5 @@
 # solution to "sums to n" problem
-## CS 4050
+## CS 4050: Algorithms & Algorithm Analysis
 ### Metropolitan State University of Denver
 
 Consider the "sums to n problem":
