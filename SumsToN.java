@@ -44,6 +44,12 @@ public class SumsToN {
 
         System.out.printf(", ");
 
+        int k = n - i;
+        if (k > 0) {
+          System.out.printf(Integer.toString(n - i));
+          System.out.printf("+");
+        }
+
         System.out.printf(Integer.toString(i));
 
       }
