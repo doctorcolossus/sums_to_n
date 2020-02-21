@@ -63,7 +63,7 @@ public class SumsToN {
           output += findSums(j, addendArgs);
         }
 
-        if (j >= i && (addends.isEmpty() || i >= max)) {
+        if (j >= i && i >= max) {
 
           for(Integer addend : addends)
             output += Integer.toString(addend) + "+";
