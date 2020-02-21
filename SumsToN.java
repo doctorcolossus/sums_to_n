@@ -37,6 +37,8 @@ public class SumsToN {
 
       findSums(n - 1);
 
+      System.out.printf(Integer.toString(n));
+
     }
 
   }
