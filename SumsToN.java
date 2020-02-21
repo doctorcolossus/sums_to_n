@@ -33,19 +33,22 @@ public class SumsToN {
 
     if (n > 0) {
 
-      if (n == 1) {
+      if (n == 1)
         System.out.printf("1");
+
+      else {
+
+        System.out.printf("1+");
+
+        findSums(n - 1);
+
+        System.out.printf("1+");
+
+        System.out.printf(Integer.toString(n));
+
+        System.out.printf(", ");
+
       }
-
-      System.out.printf("1+");
-
-      findSums(n - 1);
-
-      System.out.printf("1+");
-
-      System.out.printf(Integer.toString(n));
-
-      System.out.printf(", ");
 
     }
 
