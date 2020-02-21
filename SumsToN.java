@@ -18,6 +18,11 @@ public class SumsToN {
 
     n = console.nextInt();
 
+    if (n < 1) {
+      System.out.println("error: n must be positive.");
+      System.exit(1);
+    }
+
     findSums(n);
 
     System.out.printf("%n");
@@ -25,11 +30,6 @@ public class SumsToN {
   }
 
   public static void findSums (int n) {
-
-    if (n < 1) {
-      System.out.println("error: n must be positive.");
-      System.exit(1);
-    }
 
     System.out.printf("1");
 
