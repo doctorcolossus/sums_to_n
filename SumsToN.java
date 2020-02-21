@@ -23,28 +23,28 @@ public class SumsToN {
       System.exit(1);
     }
 
-    findSums(n);
+    findSums(n, n);
 
     System.out.printf("%n");
 
   }
 
-  public static void findSums (int n) {
+  public static void findSums (int n, int i) {
 
-    if (n > 0) {
+    if (i > 0) {
 
-      if (n == 1)
+      if (i == 1)
         System.out.printf("1");
 
       else {
 
         System.out.printf("1+");
 
-        findSums(n - 1);
+        findSums(n, i - 1);
 
         System.out.printf(", ");
 
-        System.out.printf(Integer.toString(n));
+        System.out.printf(Integer.toString(i));
 
       }
 
