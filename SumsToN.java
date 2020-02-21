@@ -56,22 +56,16 @@ public class SumsToN {
         if (!addends.isEmpty())
           last = addends.get(addends.size() - 1);
 
-        if (i >= last) {
+        if (i >= last && j >= i) {
 
-          if (j > i) {
-            addendArgs.add(i);
-            findSums(j, addendArgs);
-          }
+          addendArgs.add(i);
+          findSums(j, addendArgs);
 
-          if (j >= i) {
+          for(Integer addend : addends)
+            System.out.printf(Integer.toString(addend) + "+");
 
-            for(Integer addend : addends)
-              System.out.printf(Integer.toString(addend) + "+");
-
-            System.out.println(Integer.toString(i) + "+"
-                               + Integer.toString(j));
-
-          }
+          System.out.println(Integer.toString(i) + "+"
+                             + Integer.toString(j));
 
         }
 
