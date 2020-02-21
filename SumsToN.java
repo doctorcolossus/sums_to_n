@@ -26,15 +26,13 @@ public class SumsToN {
       System.exit(1);
     }
 
-    System.out.println(findSums(n));
+    System.out.printf(findSums(n));
 
   }
 
   public static String findSums (int n) {
 
-    String output = findSums(n, new ArrayList<Integer>());
-
-    return output.substring(0, output.lastIndexOf(","));
+    return findSums(n, new ArrayList<Integer>());
 
   }
 
@@ -70,7 +68,7 @@ public class SumsToN {
 
           output += Integer.toString(i) + "+"
                   + Integer.toString(j)
-                  + ",";
+                  + "%n";
 
         }
 
