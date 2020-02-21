@@ -32,7 +32,8 @@ public class SumsToN {
 
   public static String findSums (int n) {
 
-    return findSums(n, new ArrayList<Integer>());
+    return findSums(n, new ArrayList<Integer>())
+           + Integer.toString(n) + "%n";
 
   }
 
