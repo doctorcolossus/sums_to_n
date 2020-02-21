@@ -2,7 +2,7 @@
  * Project 1: Sums to N problem
  * Casey Jones
  * Bradley Isaacs
- * Ahadwali Zadron
+ * Ahmadwali Zadron
  */
 
 import java.util.Scanner;
