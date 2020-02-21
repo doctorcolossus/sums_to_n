@@ -35,9 +35,7 @@ public class SumsToN {
 
       System.out.printf("1");
 
-      n--;
-
-      findSums(n);
+      findSums(n - 1);
 
     }
 
