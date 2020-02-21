@@ -42,11 +42,9 @@ public class SumsToN {
 
         findSums(n - 1);
 
-        System.out.printf("1+");
+        System.out.printf(", ");
 
         System.out.printf(Integer.toString(n));
-
-        System.out.printf(", ");
 
       }
 
