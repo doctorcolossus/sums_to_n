@@ -6,6 +6,9 @@
  */
 
 import java.util.Scanner;
+import java.util.Collections;
+import java.util.List;
+import java.util.ArrayList;
 
 public class SumsToN {
 
@@ -23,36 +26,57 @@ public class SumsToN {
       System.exit(1);
     }
 
-    findSums(n, n);
-
-    System.out.printf("%n");
+    System.out.println(findSums(n));
 
   }
 
-  public static void findSums (int n, int i) {
+  public static String findSums (int n) {
 
-    if (i > 0) {
+    String output = findSums(n, new ArrayList<Integer>());
 
-      if (i == 1)
-        System.out.printf("1");
+    return output.substring(0, output.lastIndexOf(","));
 
-      else {
+  }
 
-        System.out.printf("1+");
+  public static String findSums (int n, ArrayList<Integer> addends) {
 
-        findSums(n, i - 1);
+    ArrayList<Integer> addendArgs;
+    String output = "";
+    int max = 0;
 
-        System.out.printf(", ");
+    if (n == 1)
+      return "1,";
 
-        int k = n - i;
-        if (k > 0) {
-          System.out.printf(Integer.toString(n - i));
-          System.out.printf("+");
+    else {
+
+      for (int i = 1; i <= n / 2; i++) {
+
+        addendArgs = new ArrayList<>(addends);
+
+        int j = n - i;
+
+        if (!addends.isEmpty())
+          max = Collections.max(addends);
+
+        if (j > i && j > max) {
+          addendArgs.add(i);
+          output += findSums(j, addendArgs);
         }
 
-        System.out.printf(Integer.toString(i));
+        if (j >= i && (addends.isEmpty() || i >= max)) {
+
+          for(Integer addend : addends)
+            output += Integer.toString(addend) + "+";
+
+          output += Integer.toString(i) + "+"
+                  + Integer.toString(j)
+                  + ",";
+
+        }
 
       }
+
+      return output;
 
     }
 
