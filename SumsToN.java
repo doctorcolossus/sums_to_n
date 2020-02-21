@@ -26,9 +26,12 @@ public class SumsToN {
 
   public static void findSums (int n) {
 
-    if (n == 1) {
-      System.out.printf("1");
+    if (n < 1) {
+      System.out.println("error: n must be positive.");
+      System.exit(1);
     }
+
+    System.out.printf("1");
 
   }
 
