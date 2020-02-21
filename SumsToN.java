@@ -31,7 +31,15 @@ public class SumsToN {
 
   public static void findSums (int n) {
 
-    System.out.printf("1");
+    if (n > 0) {
+
+      System.out.printf("1");
+
+      n--;
+
+      findSums(n);
+
+    }
 
   }
 
