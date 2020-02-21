@@ -1,13 +1,12 @@
-/* CS 4050: Algorithms & Algorithm Analysis
+/* 
+ * CS 4050: Algorithms & Algorithm Analysis
  * Project 1: Sums to N problem
  * Casey Jones
  * Bradley Isaacs
  * Ahmadwali Zadron
  */
 
-import java.util.Scanner;
-import java.util.List;
-import java.util.ArrayList;
+import java.util.*;
 
 public class SumsToN {
 
@@ -45,7 +44,7 @@ public class SumsToN {
     if (n == 1)
       System.out.println("1");
 
-    else {
+    else{
 
       for (int i = 1; i <= n / 2; i++) {
 
